@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,115 @@
 
     <title>Job - task</title>
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    as
+    <!-- home -->
+    <section class="home" id="home">
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <span class="logo__text">trppd</span>
+            </div>
+
+            <div class="nav__right">
+                <div class="nav__content">
+                    <div class="nav__content-text">
+                        My Collection
+                    </div>
+                    <div class="nav__content-text">
+                        Galih Pambudi
+                    </div>
+                </div>
+                <div class="nav__circle"></div>
+            </div>
+        </div>
+        <!-- navbar end -->
+
+        <!-- menu -->
+        <div class="menu">
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="menu__list-item ">
+                    <a href="#recomendation">Recomendation</a>
+                </li>
+                <li class="menu__list-item active">
+                    <a href="#explore">Explore</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#help">Help</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#about">About us</a>
+                </li>
+            </ul>
+        </div>
+        <!-- menu end -->
+
+        <!-- home slider -->
+        <div class="swiper homeSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/home-5.jpg" alt="home" class="home__img">
+                    <div class="home__slider-content">
+                        <h1 class="home__slider-title">The Walchen Lake</h1>
+                        <p class="home__slider-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Corporis ad aliquid et autem aut minima consequuntur eaque
+                            iure a blanditiis?
+                        </p>
+                        <a href="" class="home__slider-btn btn">Ream More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/home-5.jpg" alt="home" class="home__img">
+                    <div class="home__slider-content">
+                        <h1 class="home__slider-title">The Walchen Lake</h1>
+                        <p class="home__slider-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Corporis ad aliquid et autem aut minima consequuntur eaque
+                            iure a blanditiis?
+                        </p>
+                        <a href="" class="home__slider-btn btn">Ream More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/home-5.jpg" alt="home" class="home__img">
+                    <div class="home__slider-content">
+                        <h1 class="home__slider-title">The Walchen Lake</h1>
+                        <p class="home__slider-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Corporis ad aliquid et autem aut minima consequuntur eaque
+                            iure a blanditiis?
+                        </p>
+                        <a href="" class="home__slider-btn btn">Ream More</a>
+                    </div>
+                </div>
+            </div>
 
 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="home__slider-bottom">
+                <span>Outdoors Edition</span>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- home slider end -->
+    </section>
+    <!-- home end -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
