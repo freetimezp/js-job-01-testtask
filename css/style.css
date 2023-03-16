@@ -214,7 +214,7 @@ li {
     overflow: hidden;
 }
 
-/* home end */
+/* home slider end */
 
 /* menu */
 .menu {
@@ -514,3 +514,70 @@ li {
 }
 
 /* features end */
+
+
+/* above */
+
+.above {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 80px;
+}
+
+.above__img {
+    width: 600px;
+    height: 600px;
+}
+
+.above__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.above__title {
+    font-size: 55px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 55px;
+    margin-top: -5px;
+}
+
+.above__subtitle {
+    color: #dad7d7;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    margin-bottom: 60px;
+    font-weight: 100;
+}
+
+.above__desc {
+    max-width: 330px;
+    margin-bottom: 30px;
+    color: #dad7d7;
+    font-size: 12px;
+}
+
+.above__btn{
+    margin-top: 55px;
+    white-space: nowrap;
+    padding: 8px 29px;
+}
+
+/* above end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

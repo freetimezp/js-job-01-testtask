@@ -2,6 +2,7 @@
 var swiper = new Swiper(".homeSwiper", {
     spaceBetween: 30,
     loop: true,
+    effect: "fade",
     pagination: {
         el: ".homeSwiper .swiper-pagination",
         type: "fraction",
@@ -13,7 +14,6 @@ var swiper = new Swiper(".homeSwiper", {
 });
 
 /* menu active */
-
 const menuItems = document.querySelectorAll(".menu__list-item");
 
 menuItems.forEach(el => el.addEventListener("click", function() {
