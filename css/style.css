@@ -836,6 +836,7 @@ li {
     margin: 0 auto;
     width: 1200px;
     padding: 115px 100px 45px 100px;
+    border-top: 1px solid #9b9898;
 }
 
 .subscribe-title {
@@ -878,7 +879,65 @@ li {
 
 /* subscribe end */
 
+/* footer */
+.footer {
+    width: 1440px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #fee251;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.footer .logo {
+    height: 90px;
+    background-color: #fee251;
+    padding: 30px 0 30px 68px;
+}
+
+.footer .logo__text {
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    color: #28272a;
+}
+
+.footer .logo__text::before {
+    position: absolute;
+    content: '';
+    bottom: 6px;
+    right: -24px;
+    height: 2px;
+    width: 18px;
+    background-color: #28272a;
+}
+
+.footer .copy {
+    font-weight: 600;
+}
+
+.footer .copy i {
+    font-weight: 500;
+    color: #28272a;
+}
+
+.footer .socials {
+    transform: translateX(-125px);
+    display: flex;
+    gap: 25px;
+}
+
+.footer .socials a i {
+    color: #28272a;
+    transition: 0.6s ease-in-out;
+}
+
+.footer .socials a:hover i {
+    transform: rotateY(360deg);
+}
+
+/* footer end */
 
 
 
