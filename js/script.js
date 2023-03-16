@@ -3,12 +3,12 @@ var swiper = new Swiper(".homeSwiper", {
     spaceBetween: 30,
     loop: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".homeSwiper .swiper-pagination",
         type: "fraction",
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".homeSwiper .swiper-button-next",
+        prevEl: ".homeSwiper .swiper-button-prev",
     },
 });
 
@@ -24,5 +24,18 @@ menuItems.forEach(el => el.addEventListener("click", function() {
         el.classList.add('active');
     }
 }))
+
+/* features slider */
+var swiper = new Swiper(".featuresSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 90,
+  loop: true,
+  pagination: {
+    el: ".featuresSwiper .swiper-pagination",
+    clickable: true,
+    type: "fraction",
+  },
+});
+
 
 
