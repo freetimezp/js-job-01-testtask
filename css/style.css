@@ -197,10 +197,10 @@ li {
 
 .swiper-pagination {
     width: 120px;
-    bottom: 26px;
-    padding: 12px 40px;
+    bottom: 30px;
+    padding: 8px 40px;
     border-radius: 50px;
-    background-color: #29282b;
+    background-color: #6c6b6e;
     left: calc(100% - 180px);
     color: #fff;
     z-index: 10;
@@ -231,17 +231,25 @@ li {
 .menu .menu__list-item {
     position: relative;
     overflow-x: hidden;
+    transition: all 0.5s ease;
 }
 
-.menu .menu__list-item.active::before {
+.menu .menu__list-item::before {
     position: absolute;
     content: '';
     top: 50%;
-    right: 0;
+    right: -120px;
     transform: translateY(-50%);
-    width: 90px;
+    width: 80px;
     height: 2px;
+    opacity: 0;
     background-color: #fff;
+    transition: all 0.5s ease;
+}
+
+.menu .menu__list-item.active::before {
+    opacity: 1;
+    right: -20px;
 }
 
 .menu .menu__list-item a {
