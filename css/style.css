@@ -31,13 +31,14 @@ html::-webkit-scrollbar-thumb {
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    background: #28272a;
+    background: black;
     margin: 0 auto;
 }
 
 section {
     width: 1440px;
     margin: 0 auto;
+    background: #28272a;
 }
 
 ul {
@@ -568,7 +569,7 @@ li {
 
 /* editor */
 .editor {
-    padding: 40px 0;
+    padding: 40px 0 100px;
     display: grid;
     grid-template-columns: 270px 1fr;
 }
@@ -739,3 +740,157 @@ li {
 }
 
 /* editor end */
+
+/* mountain */
+.mountain {
+    padding: 100px 115px 80px 270px;
+    background: url(../images/mountain-bg-2.jpg) center / cover no-repeat;
+    position: relative;
+}
+
+.mountain .blur {
+    width: 100%;
+    height: 122px;
+    position: absolute;
+    content: '';
+    top: -56px;
+    left: 0;
+    right: 0;
+    background-color: hsla(260, 7%, 16%, 1);
+    filter: blur(31px);
+    z-index: 10;
+}
+
+.mountain__title {
+    font-size: 55px;
+    color: #fffffe;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+.mountain__item-img {
+    width: 270px;
+    height: 270px;
+}
+
+.mountain__desc {
+    max-width: 350px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #fcffff;
+    font-weight: 500;
+    margin-bottom: 55px;
+}
+
+.mountain__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d0cfcf;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.mountain__item:last-child {
+    border-bottom: none;
+}
+
+.mountain__item-title {
+    color: #fefdff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.mountain__item-subtitle {
+    color: #667075;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.mountain__item-desc {
+    color: #c2cace;
+    font-size: 14px;
+    max-width: 590px;
+    font-weight: 300;
+}
+
+.mountain__item-btn {
+    margin-top: 35px;
+}
+
+/* mountain end */
+
+/* subscribe */
+
+.subscribe {
+    margin: 0 auto;
+    position: relative;
+    z-index: 20;
+    height: 415px;
+}
+
+.subscribe__wrapper {
+    text-align: center;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 115px 100px 45px 100px;
+}
+
+.subscribe-title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subscribe__block {
+    max-width: 530px;
+    margin: 0 auto;
+    border-radius: 30px;
+    position: relative;
+    padding-top: 85px;
+    padding-bottom: 95px;
+}
+
+.subscribe__input {
+    padding: 12px 34px 12px 12px;
+    background-color: #fff;
+    color: #342900;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.subscribe__img {
+    width: 330px;
+    height: 230px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+
+/* subscribe end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
