@@ -16,10 +16,10 @@ var swiper = new Swiper(".homeSwiper", {
 /* menu active */
 const menuItems = document.querySelectorAll(".menu__list-item");
 
-menuItems.forEach(el => el.addEventListener("click", function() {
-    if(el.classList.contains('active')) {
+menuItems.forEach(el => el.addEventListener("click", function () {
+    if (el.classList.contains('active')) {
         el.classList.remove('active');
-    }else{
+    } else {
         menuItems.forEach(el => el.classList.remove("active"));
         el.classList.add('active');
     }
@@ -27,15 +27,28 @@ menuItems.forEach(el => el.addEventListener("click", function() {
 
 /* features slider */
 var swiper = new Swiper(".featuresSwiper", {
-  slidesPerView: 3,
-  spaceBetween: 90,
-  loop: true,
-  pagination: {
-    el: ".featuresSwiper .swiper-pagination",
-    clickable: true,
-    type: "fraction",
-  },
+    slidesPerView: 3,
+    spaceBetween: 90,
+    loop: true,
+    pagination: {
+        el: ".featuresSwiper .swiper-pagination",
+        clickable: true,
+        type: "fraction",
+    },
 });
 
 
+/* editor slider */
+var swiper = new Swiper(".editorSwiper", {
+    loop: true,
+    pagination: {
+        el: ".editor .swiper-pagination",
+        dynamicBullets: true,
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".editorSwiper .swiper-button-next",
+        prevEl: ".editorSwiper .swiper-button-prev",
+    },
+});
 
