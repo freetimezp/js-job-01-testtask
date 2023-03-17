@@ -1191,6 +1191,10 @@ li {
         padding: 0 20px;
     }
 
+    .mountain__item {
+        max-width: 375px;
+    }
+
     .mountain__item-img {
         width: 376px;
         height: 376px;
