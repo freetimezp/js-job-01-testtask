@@ -27,9 +27,15 @@ menuItems.forEach(el => el.addEventListener("click", function () {
 
 /* features slider */
 var swiper = new Swiper(".featuresSwiper", {
-    slidesPerView: 3,
-    spaceBetween: 90,
+    slidesPerView: "auto",
+    spaceBetween: 15,
     loop: true,
+    breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 90,
+        },
+      },
     pagination: {
         el: ".featuresSwiper .swiper-pagination",
         clickable: true,
@@ -41,6 +47,8 @@ var swiper = new Swiper(".featuresSwiper", {
 /* editor slider */
 var swiper = new Swiper(".editorSwiper", {
     loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 15,
     pagination: {
         el: ".editor .swiper-pagination",
         dynamicBullets: true,
@@ -50,5 +58,10 @@ var swiper = new Swiper(".editorSwiper", {
         nextEl: ".editorSwiper .swiper-button-next",
         prevEl: ".editorSwiper .swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+      },
 });
 
